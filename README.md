@@ -15,7 +15,7 @@ You can try the tool live here: **[https://pdfutility-zwo4p85ovayuptierqnsep.str
 - Web-based interface using Streamlit
 - Upload and download files directly from the browser
 - Secure and efficient file handling
-- 📴 Can be run locally **without an internet connection**
+- Can be run locally **without an internet connection**
 - No local installation required for users (if hosted online)
 
 ## 🚀 How to Run Locally
@@ -46,7 +46,7 @@ Then open `http://localhost:8501` in your browser.
 ```
 PDF-Utility-Tool/
 ├── pdf_utility_web.py        # Streamlit web app code
-├── pdf_utility.py            # Original standalone Python script
+├── pdf_utility.py            # Standalone Python script
 ├── requirements.txt          # Required Python packages
 ├── README.md                 # Project documentation
 ```
