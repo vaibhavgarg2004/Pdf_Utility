@@ -15,21 +15,32 @@ You can try the tool live here: **[https://pdfutility-zwo4p85ovayuptierqnsep.str
 - Web-based interface using Streamlit
 - Upload and download files directly from the browser
 - Secure and efficient file handling
+- 📴 Can be run locally **without an internet connection**
 - No local installation required for users (if hosted online)
 
 ## 🚀 How to Run Locally
 ### Prerequisites:
 - Python 3.7+
-- Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-  ```
 
-### Run the app:
+### 1. Clone the repository:
+```bash
+git clone https://github.com/vaibhavgarg2004/Pdf_Utility.git
+cd Pdf_Utility
+```
+
+### 2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the app:
 ```bash
 streamlit run pdf_utility_web.py
 ```
+
 Then open `http://localhost:8501` in your browser.
+
+📌 **Note:** Once set up, the app can be used offline with full functionality.
 
 ## 📂 Project Structure
 ```
