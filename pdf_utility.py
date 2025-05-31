@@ -4,20 +4,40 @@ def ensure_pdf(filename):
     return filename if filename.lower().endswith('.pdf') else filename + '.pdf'
 
 def merge_pdfs():
-    pdfs = input("Enter PDF file names to merge (comma-separated): ").split(',')
+    print("Choose merge option:")
+    print("1. Enter PDF file names manually")
+    print("2. Merge all PDFs in the current directory")
+    choice = input("Enter choice (1 or 2): ")
+
     merger = PyPDF2.PdfMerger()
-    
-    for pdf in pdfs:
-        pdf = ensure_pdf(pdf.strip())
-        if os.path.exists(pdf):
+
+    if choice == '1':
+        pdfs = input("Enter PDF file names to merge (comma-separated): ").split(',')
+        for pdf in pdfs:
+            pdf = ensure_pdf(pdf.strip())
+            if os.path.exists(pdf):
+                merger.append(pdf)
+            else:
+                print(f"File not found: {pdf}")
+
+    elif choice == '2':
+        pdfs = sorted([f for f in os.listdir() if f.lower().endswith('.pdf')])
+        if not pdfs:
+            print("No PDF files found in the current directory.")
+            return
+        print(f"Merging {len(pdfs)} PDF(s):")
+        for pdf in pdfs:
+            print(f"  - {pdf}")
             merger.append(pdf)
-        else:
-            print(f"File not found: {pdf}")
-    
+    else:
+        print("Invalid choice.")
+        return
+
     output = ensure_pdf(input("Enter output file name (e.g., merged.pdf): "))
     merger.write(output)
     merger.close()
     print(f"Merged into: {output}")
+
 
 def split_pdf():
     file = ensure_pdf(input("Enter the PDF file to split: "))
