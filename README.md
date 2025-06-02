@@ -38,8 +38,6 @@ pip install -r requirements.txt
 streamlit run pdf_utility_web.py
 ```
 
-Then open `http://localhost:8501` in your browser.
-
 📌 **Note:** Once set up, the app can be used offline with full functionality.
 
 ## 📂 Project Structure
