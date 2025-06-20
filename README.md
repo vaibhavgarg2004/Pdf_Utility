@@ -9,7 +9,7 @@ A simple and interactive PDF utility tool built with Python and Streamlit. This 
 - 🔐 Encrypt PDF files with a password
 
 ## 🌐 Live Website
-You can try the tool live here: **[https://pdfutility-zwo4p85ovayuptierqnsep.streamlit.app](https://pdfutility-zwo4p85ovayuptierqnsep.streamlit.app)**
+You can try the tool live here: **[PDF-Utility-Tool](https://vaibhav-project-pdf-utility.streamlit.app/)**
 
 ## 🛠 Features
 - Web-based interface using Streamlit
