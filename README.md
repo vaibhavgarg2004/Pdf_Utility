@@ -8,8 +8,12 @@ A simple and interactive PDF utility tool built with Python and Streamlit. This 
 - 🔄 Rotate PDF pages
 - 🔐 Encrypt PDF files with a password
 
+---
+
 ## 🌐 Live Website
 You can try the tool live here: **[PDF-Utility-Tool](https://vaibhav-project-pdf-utility.streamlit.app/)**
+
+---
 
 ## 🛠 Features
 - Web-based interface using Streamlit
@@ -17,6 +21,19 @@ You can try the tool live here: **[PDF-Utility-Tool](https://vaibhav-project-pdf
 - Secure and efficient file handling
 - Can be run locally **without an internet connection**
 - No local installation required for users (if hosted online)
+
+---
+
+## 📂 Project Structure
+```
+PDF-Utility-Tool/
+├── pdf_utility_web.py        # Streamlit web app code
+├── pdf_utility.py            # Standalone Python script
+├── requirements.txt          # Required Python packages
+├── README.md                 # Project documentation
+```
+
+---
 
 ## 🚀 How to Run Locally
 ### Prerequisites:
@@ -38,14 +55,6 @@ pip install -r requirements.txt
 streamlit run pdf_utility_web.py
 ```
 
-📌 **Note:** Once set up, the app can be used offline with full functionality.
+---
 
-## 📂 Project Structure
-```
-PDF-Utility-Tool/
-├── pdf_utility_web.py        # Streamlit web app code
-├── pdf_utility.py            # Standalone Python script
-├── requirements.txt          # Required Python packages
-├── README.md                 # Project documentation
-```
 Built with ❤️ using Streamlit and PyPDF2
